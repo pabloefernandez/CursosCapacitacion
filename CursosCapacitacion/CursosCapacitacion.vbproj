@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F57289FC-8A36-48FE-87D8-3FC8322FF500}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CursosCapacitacion.My.MyApplication</StartupObject>
+    <RootNamespace>CursosCapacitacion</RootNamespace>
+    <AssemblyName>CursosCapacitacion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CursosCapacitacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CursosCapacitacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMINISTRACION\ABM\Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Capacitadores\A_Capacitadores.Designer.vb">
+      <DependentUpon>A_Capacitadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Capacitadores\A_Capacitadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Cursos\A_Cursos.Designer.vb">
+      <DependentUpon>A_Cursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Cursos\A_Cursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Compañias\A_Compania.Designer.vb">
+      <DependentUpon>A_Compania.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Compañias\A_Compania.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Titulos\A_Titulos.Designer.vb">
+      <DependentUpon>A_Titulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Titulos\A_Titulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Capacitadores\CursosDictados.Designer.vb">
+      <DependentUpon>CursosDictados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Capacitadores\CursosDictados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Areas\A_Areas.Designer.vb">
+      <DependentUpon>A_Areas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Areas\A_Areas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionCapac.Designer.vb">
+      <DependentUpon>AsignacionCapac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionCapac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Certificaciones.Designer.vb">
+      <DependentUpon>Certificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Certificaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Compañias\Cursos_Realizados.Designer.vb">
+      <DependentUpon>Cursos_Realizados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Compañias\Cursos_Realizados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTRATOS\DetalleContrato2.Designer.vb">
+      <DependentUpon>DetalleContrato2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTRATOS\DetalleContrato2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COMPANIAS\DetallePContrato.Designer.vb">
+      <DependentUpon>DetallePContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COMPANIAS\DetallePContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTRATOS\EmpCont.Designer.vb">
+      <DependentUpon>EmpCont.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTRATOS\EmpCont.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\Contratados.Designer.vb">
+      <DependentUpon>Contratados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\Contratados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\Correlativos.Designer.vb">
+      <DependentUpon>Correlativos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\Correlativos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTRATOS\DetalleContrato.Designer.vb">
+      <DependentUpon>DetalleContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTRATOS\DetalleContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTRATOS\Contratos.Designer.vb">
+      <DependentUpon>Contratos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTRATOS\Contratos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTRATOS\E_Edicion.Designer.vb">
+      <DependentUpon>E_Edicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTRATOS\E_Edicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\H_Capacitadores\H_Capacitadores.Designer.vb">
+      <DependentUpon>H_Capacitadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\H_Capacitadores\H_Capacitadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\MenuAdministracion.Designer.vb">
+      <DependentUpon>MenuAdministracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\MenuAdministracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COMPANIAS\MenuComp.Designer.vb">
+      <DependentUpon>MenuComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COMPANIAS\MenuComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluaciones.Designer.vb">
+      <DependentUpon>Evaluaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FINANZAS\MenuFinanzas.Designer.vb">
+      <DependentUpon>MenuFinanzas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FINANZAS\MenuFinanzas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INICIO\Fondo.Designer.vb">
+      <DependentUpon>Fondo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INICIO\Fondo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMPRIMIR\Encabezado.vb" />
+    <Compile Include="IMPRIMIR\Imprimir.Designer.vb">
+      <DependentUpon>Imprimir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IMPRIMIR\Imprimir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCertificaciones.Designer.vb">
+      <DependentUpon>MCertificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MCertificaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCapacitadores.Designer.vb">
+      <DependentUpon>MenuCapacitadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCapacitadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INICIO\MenuInicioSesion.Designer.vb">
+      <DependentUpon>MenuInicioSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INICIO\MenuInicioSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="MPCapacitadores.Designer.vb">
+      <DependentUpon>MPCapacitadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MPCapacitadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\OpcCursos.Designer.vb">
+      <DependentUpon>OpcCursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\OpcCursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\Planeados.Designer.vb">
+      <DependentUpon>Planeados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\Planeados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\Requisitos.Designer.vb">
+      <DependentUpon>Requisitos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\Requisitos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Compañias\M_Compania.Designer.vb">
+      <DependentUpon>M_Compania.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Compañias\M_Compania.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Capacitadores\M_Capacitadores.Designer.vb">
+      <DependentUpon>M_Capacitadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Capacitadores\M_Capacitadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Ediciones\A_Ediciones.Designer.vb">
+      <DependentUpon>A_Ediciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Ediciones\A_Ediciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Capacitadores\OpcCapacitadores.Designer.vb">
+      <DependentUpon>OpcCapacitadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Capacitadores\OpcCapacitadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Capacitadores\PuntajeCapac.Designer.vb">
+      <DependentUpon>PuntajeCapac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Capacitadores\PuntajeCapac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\Semestre.Designer.vb">
+      <DependentUpon>Semestre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Cursos\Semestre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Compañias\OpcCompanias.Designer.vb">
+      <DependentUpon>OpcCompanias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Compañias\OpcCompanias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Pre-requisitos\Prerreq.Designer.vb">
+      <DependentUpon>Prerreq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\ABM\Pre-requisitos\Prerreq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Compañias\PuntajeEmpleados.Designer.vb">
+      <DependentUpon>PuntajeEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\Compañias\PuntajeEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FINANZAS\PagoCapacitadores.Designer.vb">
+      <DependentUpon>PagoCapacitadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FINANZAS\PagoCapacitadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FINANZAS\CapacitadoresPagados.Designer.vb">
+      <DependentUpon>CapacitadoresPagados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FINANZAS\CapacitadoresPagados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTRATOS\Tipo_Pago.Designer.vb">
+      <DependentUpon>Tipo_Pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONTRATOS\Tipo_Pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\Capacitadores\A_Capacitadores.resx">
+      <DependentUpon>A_Capacitadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\Cursos\A_Cursos.resx">
+      <DependentUpon>A_Cursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\Compañias\A_Compania.resx">
+      <DependentUpon>A_Compania.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\Titulos\A_Titulos.resx">
+      <DependentUpon>A_Titulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Capacitadores\CursosDictados.resx">
+      <DependentUpon>CursosDictados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\Areas\A_Areas.resx">
+      <DependentUpon>A_Areas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionCapac.resx">
+      <DependentUpon>AsignacionCapac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certificaciones.resx">
+      <DependentUpon>Certificaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Compañias\Cursos_Realizados.resx">
+      <DependentUpon>Cursos_Realizados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTRATOS\DetalleContrato.resx">
+      <DependentUpon>DetalleContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTRATOS\DetalleContrato2.resx">
+      <DependentUpon>DetalleContrato2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COMPANIAS\DetallePContrato.resx">
+      <DependentUpon>DetallePContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTRATOS\EmpCont.resx">
+      <DependentUpon>EmpCont.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Cursos\Contratados.resx">
+      <DependentUpon>Contratados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Cursos\Correlativos.resx">
+      <DependentUpon>Correlativos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTRATOS\Contratos.resx">
+      <DependentUpon>Contratos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTRATOS\E_Edicion.resx">
+      <DependentUpon>E_Edicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Cursos\Requisitos.resx">
+      <DependentUpon>Requisitos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\H_Capacitadores\H_Capacitadores.resx">
+      <DependentUpon>H_Capacitadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\MenuAdministracion.resx">
+      <DependentUpon>MenuAdministracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COMPANIAS\MenuComp.resx">
+      <DependentUpon>MenuComp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evaluaciones.resx">
+      <DependentUpon>Evaluaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FINANZAS\MenuFinanzas.resx">
+      <DependentUpon>MenuFinanzas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INICIO\Fondo.resx">
+      <DependentUpon>Fondo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMPRIMIR\Certificaciones.rdlc" />
+    <EmbeddedResource Include="IMPRIMIR\Imprimir.resx">
+      <DependentUpon>Imprimir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCertificaciones.resx">
+      <DependentUpon>MCertificaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCapacitadores.resx">
+      <DependentUpon>MenuCapacitadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INICIO\MenuInicioSesion.resx">
+      <DependentUpon>MenuInicioSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPCapacitadores.resx">
+      <DependentUpon>MPCapacitadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Cursos\OpcCursos.resx">
+      <DependentUpon>OpcCursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Cursos\Planeados.resx">
+      <DependentUpon>Planeados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\Compañias\M_Compania.resx">
+      <DependentUpon>M_Compania.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\Capacitadores\M_Capacitadores.resx">
+      <DependentUpon>M_Capacitadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\Ediciones\A_Ediciones.resx">
+      <DependentUpon>A_Ediciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Capacitadores\OpcCapacitadores.resx">
+      <DependentUpon>OpcCapacitadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Capacitadores\PuntajeCapac.resx">
+      <DependentUpon>PuntajeCapac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Cursos\Semestre.resx">
+      <DependentUpon>Semestre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Compañias\OpcCompanias.resx">
+      <DependentUpon>OpcCompanias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\ABM\Pre-requisitos\Prerreq.resx">
+      <DependentUpon>Prerreq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\Compañias\PuntajeEmpleados.resx">
+      <DependentUpon>PuntajeEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FINANZAS\PagoCapacitadores.resx">
+      <DependentUpon>PagoCapacitadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FINANZAS\CapacitadoresPagados.resx">
+      <DependentUpon>CapacitadoresPagados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTRATOS\Tipo_Pago.resx">
+      <DependentUpon>Tipo_Pago.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Encabezado.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CAPACITADORES\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
